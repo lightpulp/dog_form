@@ -39,7 +39,7 @@ $(document).ready(function () {
       $.ajax({
           url: '/fetch_dog',
           type: 'GET',
-          data: { breed: selectedBreed }, 
+          data: { breed: selectedBreed },
           success: function (response) {
               if (response.image_url) {
                   $('#image-container').html('');
